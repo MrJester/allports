@@ -19,7 +19,7 @@ sockets = []
 socket_threads = []
 server = '127.0.0.1'
 
-for port_number in range(1, 1024):
+for port_number in range(1025, 1027):
     try:
         sockets.append(ThreadedTCPServer((server, port_number), ClientHandler))
         print("Socket opened on port {}".format(port_number))
